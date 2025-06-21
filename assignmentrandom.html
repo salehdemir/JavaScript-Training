@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Assignment</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        button {
+            font-size: 24px;
+            background-color: rgb(88, 226, 61);
+            border: none;
+            border-radius: 15px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+        button:active {
+            background-color: rgb(21, 128, 0);
+        }
+        #result {
+            font-size: 64px;
+            margin-top: 48px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Assignment Saleh Muhammad</h1>
+    <button onclick="showRandomNumber()">Click Me</button>
+    <div id="result"></div>
+
+    <script>
+        function showRandomNumber() {
+            var randomNumber = Math.random() * 6; 
+            var randomNumber1 = Math.floor(randomNumber) + 1;
+            document.getElementById("result").textContent = randomNumber1;
+        }
+    </script>
+</body>
+</html>

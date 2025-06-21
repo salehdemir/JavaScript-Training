@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var firstName = prompt("Enter Your Name");
+        var secondName = prompt("Enter Your Partener Name");
+
+       var randomNumber =Math.floor( Math.random() * 100) + 1;
+    //    var randomNumber1 = Math.floor(randomNumber) + 1;
+
+    function loveCalculator(first,second){
+ if (randomNumber >90 ){
+        alert("95%")
+       }
+       else if (randomNumber > 80){
+        alert("85%")
+       }
+      else  if (randomNumber >70 ){
+        alert("75%")
+       }
+      else  if (randomNumber >60 ){
+        alert("65%")
+       }
+      else  {
+        alert("less than 50%")
+       }
+    }
+    loveCalculator(firstName,secondName);
+
+      
+      
+    </script>
+</body>
+</html>
