@@ -7,30 +7,72 @@
 </head>
 <body>
    <script>
-    // var name= ['ali','ahmad','mahmood'];
-    // console.log(name[0]);
-     var randomNumber = Math.random() * 100; 
-    var nums = Math.floor(randomNumber) + 1;
-
    
-    function fizzBazz (num){
-          if (nums % 3 === 0 && nums % 5 === 0){
-        alert("FizzBazz")
-    }
-   else if (nums % 3 === 0 ){
-        alert("Fizz")
-    }
-    else if (nums % 5 === 0 ){
-        alert ("Bazz")
-    }
+    //  var randomNumber = Math.random() * 100; 
+    // var nums = Math.floor(randomNumber) + 1;
    
-    else{
-        alert(nums)
-    }
-    }
-    fizzBazz();
+// var nums = 1;
+   
+//     function fizzBazz (num){
+//         var lst = [nums];
+//         nums++
+    //       if (nums % 3 === 0 && nums % 5 === 0){
+    //     alert(lst+ "FizzBazz")
+    // }
+//    else if (nums % 3 === 0 ){
+//         alert(lst+"Fizz")
+//     }
+    // else if (nums % 5 === 0 ){
+    //     alert (lst+"Bazz")
+    // }
+//     else{
+//         alert(lst)
+//     }
+    // }
+    // alert(fizzBazz(2));
 
-    Assignment
+    // Assignment
+
+var nums = 1;
+var lst = [];
+
+function fizzBazz() {
+
+    var number = "";
+
+    if (nums % 3 === 0 && nums % 5 === 0) {
+        number = "fizzBazz";
+    } else if (nums % 3 === 0) {
+        number = "fizz";
+    } else if (nums % 5 === 0) {
+        number = "bazz";
+    }else {
+        number = nums;
+    }
+    lst.push(number);
+    nums++;
+    return lst;
+}
+
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+alert(fizzBazz());
+
 
    </script> 
 </body>
