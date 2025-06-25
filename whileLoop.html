@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script>
+        var nums = 1;
+var lst = [];
+
+    function fizzBazz() {
+        while ( nums < 100){
+    if (nums % 3 === 0 && nums % 5 === 0) {
+        lst.push("fizzBuzz")
+    } else if (nums % 3 === 0) {
+       lst.push("Fizz")
+    } else if (nums % 5 === 0) {
+       lst.push("Buzz")
+    }else {
+        lst.push(nums)
+    }
+  
+    nums++;
+    return lst;
+}
+}
+
+
+    </script>
+</body>
+</html>
