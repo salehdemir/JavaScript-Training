@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// function fibo(n) {
+//     var n1 = 0;
+//     var n2 = 1;
+//     var result= [];
+//     if ( n <= 1){
+//         return result
+//     }
+
+//     for (let i = 2; i <= n; i++) {
+//       var n3 = n1 + n2;
+//         result.push(n3);
+//         n1 = n2;
+//         n2 = n3;
+//     }
+
+//    return result
+// }
+
+var outPut = [];
+function fibonacci(n){
+    if (n === 1){
+        outPut = [0];
+
+    }
+    else if (n === 2){
+        outPut = [0,1]
+    }
+    else {
+         outPut = [0,1]
+        for(var i= 2; i <= n; i++ ){
+         outPut.push(outPut[outPut.length - 2] + outPut[outPut.length - 1])
+    }
+}
+    return outPut
+}
+
+
+    </script>
+</body>
+</html>
