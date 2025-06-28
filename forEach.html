@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Use to iterate over the element of array 
+     element, index, array -->
+     <script>
+        // var num = [1,2,3,4,5];
+        // num.forEach(sqr)
+        // function sqr (element){
+        //     console.log(element * 3)
+        // } 
+
+        var names = ["saleh", "zabi","ahmad"];
+        names.forEach(upperCase);
+        names.forEach(display);
+        function upperCase(element,index,array){
+            array[index] = element.toUpperCase();
+        }
+
+        function display(element){
+            console.log(element)
+        }
+
+     </script>
+</body>
+</html>
