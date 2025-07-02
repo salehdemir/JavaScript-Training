@@ -7,18 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Encapsulation.
+Inheritance.
+Polymorphism.
+Abstraction -->
     <h1 id="head">Hello</h1>
     <button onclick="clickButton()" id="input">Click Me</button>
     <ul>
-        <li>Hi</li>
-        <li>How</li>
-        <li>Are You</li>
+        <li class="item">Hi</li>
+        <li class="item">How</li>
+        <li class="item">Are You</li>
     </ul>
 
     <script>
-        function clickButton() {
-            document.getElementById("head").style.color = "red";
-        }
+       
+            // document.getElementsByClassName("item").style.color = "red";
+            let items = document.getElementsByClassName("item");
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.color = "red";
+    }
+ 
+    
+    /* Or 
+      let items = document.getElementsByClassName("item");
+    items[0].style.color = "red";
+    items[1].style.color = "blue";
+    items[2].style.color = "green";
+    */
     </script>
 </body>
 
