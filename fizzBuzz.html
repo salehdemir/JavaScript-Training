@@ -38,40 +38,22 @@ var lst = [];
 
 function fizzBazz() {
 
-    var number = "";
+   
 
     if (nums % 3 === 0 && nums % 5 === 0) {
-        number = "fizzBazz";
+        lst.push("fizzBuzz")
     } else if (nums % 3 === 0) {
-        number = "fizz";
+       lst.push("Fizz")
     } else if (nums % 5 === 0) {
-        number = "bazz";
+       lst.push("Buzz")
     }else {
-        number = nums;
+        lst.push(nums)
     }
-    lst.push(number);
+  
     nums++;
     return lst;
 }
 
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
-alert(fizzBazz());
 
 
    </script> 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+        <h1 id="titles">Random Assignment Saleh Muhammad</h1>
+    <button onclick="showRandomNumber()">Click Me</button>
+    <div id="result"></div>
+
+    <script>
+        function showRandomNumber() {
+            var randomNumber = Math.random() * 6; 
+            var randomNumber1 = Math.floor(randomNumber) + 1;
+            document.getElementById("result").textContent = randomNumber1;
+            if(randomNumber1 === 1 || randomNumber1 === 2 ||randomNumber1 === 3){
+                document.getElementById("titles").textContent = "You Lose"
+            } else{
+                  document.getElementById("titles").textContent = "You Won"
+            }
+        }
+    </script>
+   
+</body>
+</html>
