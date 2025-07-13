@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- oject and nested object -->
+    <!-- var bellBoy1 = {
+        name: "Ahmad",
+        age: 19,
+        hasPermit:true,
+        langauges: ["English","French"],
+        bellBoyex :{
+            yearOfExperience: 15,
+            education:"BBA"
+        }
+    }  -->
+
+    <!-- constractor function: not camel case BellBoy -->
+     <script>
+          function HouseKeeper (name,age,workPermit,langauges){
+        this.name = name;
+        this.age = age;
+        this.workPermit = workPermit;
+        this.langauges = langauges;
+     }
+
+     var houseKeeper1 = new HouseKeeper("Laila",19,true,["english","Dari"])
+     var houseKeeper2 = new HouseKeeper("Zuhal",21,true,["english","Dari"])
+     var houseKeeper3 = new HouseKeeper("Maryam",32,false,["english","Dari"])
+     var houseKeeper4 = new HouseKeeper("Shela",45,true,"Dari")
+
+     
+     </script>
+   
+
+</body>
+</html>
