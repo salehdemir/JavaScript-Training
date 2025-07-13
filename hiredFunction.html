@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function add(num1, num2) {
+    return num1 + num2;
+}
+
+function subtract(num1, num2) {
+    return num1 - num2;
+}
+
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+
+function division(num1, num2) {
+    return num1 / num2;
+}
+var operations = {
+    "+": (a, b) => a + b,
+    "-": (a, b) => a - b,
+    "*": (a, b) => a * b,
+    "/": (a, b) => a / b
+};
+
+function calculation(num1, num2, operator) {
+    return operations[operator]?.(num1, num2);
+}
+
+// function operations(add,subtract,multiply,division){
+//     return operator;
+// }
+
+
+// function calculation() {
+//     var number1 = Number(prompt("Please enter the first number:"));
+//     var number2 = Number(prompt("Please enter the second number:"));
+//     var operator = prompt("Enter operation (add, subtract, multiply, division):").toLowerCase();
+
+//     var operations = {
+//         add,
+//         subtract,
+//         multiply,
+//         division
+//     };
+    // var result = operations(number1, number2);
+    //  alert("Result: " + result);
+    //      console.log("Result:", result);
+
+    // var operationFunction = operations[operator];
+
+    // if (typeof operationFunction === "function") {
+    //     const result = operationFunction(number1, number2);
+    //     alert("Result: " + result);
+    //     console.log("Result:", result);
+    // } else {
+    //     alert("Invalid operation");
+    // }
+// }
+
+// calculation();
+
+    </script>
+    <!-- use prompt that take numbers and operator and it should apply
+    and in parametre with num1 and num2 if we write add it works but when we use * it doesnt use it how 
+    -->
+</body>
+</html>
