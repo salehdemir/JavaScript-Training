@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+
+    <script>        
+        let a = Number(prompt("Enter First Number"));
+        let operate = prompt("Enter operator");
+        let b = Number(prompt("Enter Second Number"));
+
+        switch(operate){
+            case "+":
+            alert(a + b);
+            break;
+            case "-":
+            alert(a - b);
+            break;
+            case "*":
+            alert(a * b);
+            break;
+            case "/":
+            alert(a / b);
+            break;
+            case "%":
+                alert(a % b);
+                break;
+        default:
+            alert("unvalid Operator")
+    }
+       
+    </script>
+</body>
+</html>
+
+<!-- window.onload: is used to when we want the html run before the java script. -->
