@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cadetblue;
+
+        }
+        .btn{
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+        li{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To do List</h1>
+    <h2>What should I buy</h2>
+    <ul>
+        <li class="lists">Tomato <button class="btn">buy</button></li>
+        <li class="lists">Potato <button class="btn">buy</button></li>
+        <li class="lists">Onion <button class="btn">buy</button></li>
+        <li class="lists">Garlic <button class="btn">buy</button></li>
+        <li class="lists">Coca Cola <button class="btn">buy</button></li>
+    
+    </ul>
+   
+
+
+    <script>
+  
+
+
+var buttons = document.querySelectorAll(".btn");
+
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function() {
+    this.parentElement.style.textDecoration = "line-through";
+  });
+}
+
+
+       
+    </script>
+</body>
+</html>
