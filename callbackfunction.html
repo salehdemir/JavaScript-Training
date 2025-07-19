@@ -7,7 +7,10 @@
     <style>
         body{
             background-color: cadetblue;
-
+text-align: center;
+        }
+        li{
+            list-style: none;
         }
         .btn{
             margin-left: 20px;
@@ -21,7 +24,7 @@
 </head>
 <body>
     <h1>To do List</h1>
-    <h2>What should I buy</h2>
+    <!-- <h2>What should I buy</h2>
     <ul>
         <li class="lists">Tomato <button class="btn">buy</button></li>
         <li class="lists">Potato <button class="btn">buy</button></li>
@@ -30,27 +33,48 @@
         <li class="lists">Coca Cola <button class="btn">buy</button></li>
     
     </ul>
-   
-
-
     <script>
-  
-
-
 var buttons = document.querySelectorAll(".btn");
-
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function() {
     this.parentElement.style.textDecoration = "line-through";
   });
-}
+} -->
 
-// in this code the addEventListener is higher order function
+
+<!-- // in this code the addEventListener is higher order function
 // and function is callback function upto we do not click the
-// button the function is not call.
+// button the function is not call. -->
 
 
-       
-    </script>
+<!-- 
+    </script> -->
+
+
+    <ul>
+    <li>meat <input type="checkbox" ></li>
+    <li>food <input type="checkbox" ></li>
+    <li>drink <input type="checkbox" ></li>
+    <li>grocery<input type="checkbox" ></li>
+    <li>water <input type="checkbox" ></li>
+</ul>
+
+<script>
+     var checkboxes = document.querySelectorAll("input").length;
+    //  var checkbox = document.querySelectorAll("input");
+     for( var i = 0; i < checkboxes; i++){
+       document.querySelectorAll("input")[i].addEventListener("click", function(){
+          this.parentElement.style.textDecoration =  "line-through";
+        })
+     }
+
+    //  for( var i = 0; i < checkboxes; i++){
+    //    document.querySelectorAll("input")[i].addEventListener("click", function(){
+    //       this.parentElement.style.textDecoration =  "line-through";
+    //     })
+    //  }
+    
+
+</script>
 </body>
 </html>
