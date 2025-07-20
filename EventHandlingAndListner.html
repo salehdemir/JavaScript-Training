@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling And Event listener</title>
+</head>
+<body>
+
+<button class="btn">Click Button</button>
+
+    <script>
+        var button = document.querySelector(".btn");
+
+// event handling (it is just calling one time and takes the last one)
+        button.onclick = () => {
+            console.log("first event handling")
+        } 
+
+           button.onclick = () => {
+            console.log("second event handling")
+        } 
+
+        // event listener (it can call more than one time)
+          button.addEventListener("click" ,() => {
+ console.log("first event listener")
+          }) 
+          
+            button.addEventListener("click" ,(e) => {
+ console.log(e.clientX,e.clientY, e)
+          }) 
+           
+        
+
+    </script>
+</body>
+</html>
