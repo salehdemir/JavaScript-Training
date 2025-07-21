@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+<form id="form" action="#" method="GET">
+    <div id="errorMsg"></div>
+    <div>
+<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Enter Your name" >
+    </div>
+    <div>
+        <label for="password">password</label>
+<input type="password" name="password" id="password" placeholder="Enter Your password" >
+    </div>
+    <button type="submit">Submit</button>
+    
+</form>
+
+    <script>
+    
+    const userName = document.getElementById("name");
+    const password = document.getElementById("password");
+    const errorMsg = document.getElementById("errorMsg");
+
+  
+
+    document.getElementById("form").addEventListener("submit" , function (e){
+         let message = [];
+        if (userName.value === "" || userName.value  === null){
+            message.push("User name can not be empty")
+        }
+         if (password.value  === "" || password.value  === null){
+            message.push("password can not be empty")
+        }
+         if (password.value.length < 6){
+            message.push("password can not be less than 6")
+        }
+        if (message.length > 0){
+            e.preventDefault();
+             errorMsg.innerHTML = message;
+        }
+         })
+       
+        // preventDefault(); is used that the form do not submit .
+        // message.join(", ")
+   
+
+
+
+    </script>
+</body>
+</html>
